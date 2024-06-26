@@ -2,7 +2,7 @@
 kind: Service
 metadata:
   name: transaction
-  namespace: production-deployment
+  namespace: ibm-bank
   labels:
     app: transaction
     service: transaction
@@ -18,7 +18,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: transaction-app
-  namespace: production-deployment
+  namespace: ibm-bank
   labels:
     app: transaction
     version: v1
