@@ -54,7 +54,7 @@ node {
             )
     }*/
 
-    stage('Deploy Image') {
+    /*stage('Deploy Image') {
       if (ENVIRONMENT == 'production') {
         timeout(time: 2, unit: 'HOURS') {
           input message: 'Approve Deploy?', ok: 'Yes'
@@ -64,7 +64,7 @@ node {
           }
         }
       }
-    }
+    }*/
      } finally {
     stage('cleanup') {
       echo 'Clean up workspace'
