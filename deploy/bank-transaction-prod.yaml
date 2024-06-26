@@ -45,7 +45,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: portal-ingress
+  name: transaction-ingress
   namespace: ibm-bank
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
