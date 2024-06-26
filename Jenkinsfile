@@ -26,7 +26,7 @@ node {
 
     stage('Build amd64 image') {
       dir('build') {
-        sh "docker build -t ${DOCKER_REGISTRY_USER}/${AMD64_LOCAL_IMAGE}:${TAG} --platform=linux/amd64 ."
+        sh "docker build -t ${DOCKER_REGISTRY_USER}/${AMD64_LOCAL_IMAGE}:${TAG} --platform=linux/amd64 --add-host ibm-bank.detera.local:10.222.21.110 ."
       }
     }
 
