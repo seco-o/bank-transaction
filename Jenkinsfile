@@ -20,7 +20,7 @@ node {
       }
 
       dir('target') {
-        sh "cp ${SERVICE}-1.0-SNAPSHOT.war ../build"
+        sh "cp ${SERVICE}-1.0-SNAPSHOT.jar ../build"
       }
     }
 
