@@ -8,13 +8,12 @@ metadata:
     service: transaction
 spec:
   ports:
-  - port: 8080
-    name: http
+    - port: 8080
+      name: http
   selector:
     app: transaction
   type: LoadBalancer
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -35,10 +34,10 @@ spec:
         version: v1
     spec:
       containers:
-      - name: transaction
-        image: docker.io/tonyfieit/transaction:v0.3
-        imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 8080
+        - name: transaction
+          image: docker.io/src32/ibm-bank-transaction:v0.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
       imagePullSecrets:
         - name: tonyfieit75-pull-secret
