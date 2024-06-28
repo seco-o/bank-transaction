@@ -4,7 +4,7 @@ commonPipeline(
     DOCKER_REGISTRY_USER: 'src32',
     AMD64_LOCAL_IMAGE: 'ibm-bank-transaction',
     SERVICE: 'bank-transaction',
-    TAG: 'v0.2',
+    TAG: 'v0.3',
     ENVIRONMENT: 'production',
     EXTENSION: 'jar'
 )
